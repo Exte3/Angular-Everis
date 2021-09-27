@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './pruebas.component.html',
   styleUrls: ['./pruebas.component.sass'],
 })
+//
 export class PruebasComponent implements OnInit {
   Titulo: string = 'Curso de Angular Básico';
   //Fecha formateable en HTMl
@@ -21,6 +22,10 @@ export class PruebasComponent implements OnInit {
   Contador: number = 0;
   //constructor
 
+  //variables del form
+  password: string | null = '';
+  email: string | null = null;
+
   dias_semana: string[] = [
     'Domingo',
     'Lunes',
@@ -31,6 +36,7 @@ export class PruebasComponent implements OnInit {
     'Sabado',
   ];
   eliminado: null | string | undefined = null;
+  dia_agregar: null | string = null;
 
   constructor() {
     console.log('Contructor Prueba');
@@ -63,5 +69,23 @@ export class PruebasComponent implements OnInit {
   }
   eliminarDia(): void {
     this.eliminado = this.dias_semana.pop();
+  }
+  agregarDia(): void {
+    if (this.dia_agregar != null) {
+      this.dias_semana.push(this.dia_agregar);
+    } else {
+      this.dias_semana;
+    }
+  }
+  insertar(): void {
+    console.log('metodo insertar');
+    console.log(this.email);
+    console.log(this.password);
+  }
+  insertar2(event: any): void {
+    console.log(' metodo insertar 2...');
+    event.preventDefault();
+    console.log(event);
+    alert();
   }
 }

@@ -10,6 +10,7 @@ import { ProductoComponent } from './general/producto/producto.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './general/error/error.component';
 import { PruebasComponent } from './general/pruebas/pruebas.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,13 +21,11 @@ import { PruebasComponent } from './general/pruebas/pruebas.component';
     ProductoComponent,
     HomeComponent,
     ErrorComponent,
-    PruebasComponent
+    PruebasComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  //Se debe importar el forms module para poder trabajar con formularios
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
