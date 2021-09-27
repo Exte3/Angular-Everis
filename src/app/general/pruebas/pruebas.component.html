@@ -1,0 +1,18 @@
+<h1>{{ Titulo }}</h1>
+<p>Fecha de hoy: {{ Fecha | date: "yyyy-MM-dd" }}</p>
+<p>Fecha de hoy: {{ Fecha1 }}</p>
+<p>Fecha de hoy: {{ Fecha2 }}</p>
+
+<br />
+<button class="btn btn-primary" (click)="obtenerDia()">Obtener día</button>
+<br />
+<!--Llama a la función que modifica el valor interno de la variable-->
+<!--ngIf-->
+<p>Día Actual: {{ dia }}</p>
+
+<!--bindings-->
+<br />
+<button type="btn btn-primary" (click)="sumar()">Sumar</button>
+<button type="btn btn-primary" (click)="restar()">Restar</button>
+<p>{{ Contador }}</p>
+<br />

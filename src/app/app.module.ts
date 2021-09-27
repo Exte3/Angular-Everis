@@ -9,6 +9,7 @@ import { AsideComponent } from './compartida/aside/aside.component';
 import { ProductoComponent } from './general/producto/producto.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './general/error/error.component';
+import { PruebasComponent } from './general/pruebas/pruebas.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ErrorComponent } from './general/error/error.component';
     AsideComponent,
     ProductoComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    PruebasComponent
   ],
   imports: [
     BrowserModule,
