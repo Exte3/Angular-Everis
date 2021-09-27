@@ -8,7 +8,7 @@
 <br />
 <!--Llama a la función que modifica el valor interno de la variable-->
 <!--ngIf-->
-<p>Día Actual: {{ dia }}</p>
+<p>Día Actual: {{ Dia }}</p>
 
 <!--bindings-->
 <br />
@@ -16,3 +16,18 @@
 <button type="btn btn-primary" (click)="restar()">Restar</button>
 <p>{{ Contador }}</p>
 <br />
+
+<!--ngfor-->
+<ul>
+  <li *ngFor="let sDia of dias_semana; let i = index">
+    <b *ngIf="i == Dia; else templateName">El día es {{ dias_semana[i] }}</b>
+    <ng-template #templateName>
+      {{ dias_semana[i] }}
+    </ng-template>
+  </li>
+</ul>
+<button class="btn btn-danger" (click)="eliminarDia()">
+  Eliminar ultimo día
+</button>
+
+<p>{{ eliminado }}</p>
