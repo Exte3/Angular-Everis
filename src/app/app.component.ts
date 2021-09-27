@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProductoService } from './services/producto.service';
+import { CategoriaService } from './services/categoria.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,10 @@ import { ProductoService } from './services/producto.service';
 export class AppComponent {
   title = 'app-sass';
 
-  constructor(public productoService: ProductoService) {
+  constructor(
+    public productoService: ProductoService,
+    public categoriesService: CategoriaService
+  ) {
     //aquí se cargan los json u otras cosas que se consumen en la aplicación
     console.log('Estamos en app componente');
   }
