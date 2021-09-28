@@ -2,33 +2,27 @@
   "productos": [
     {
       "id": 1,
-      "nombre": "Pera",
-      "descripcion": "El rincon de Soto",
-      "precio": 12.34
+      "nombre": "Play Station 5",
+      "descripcion": "/assets/img/ps5.PNG",
+      "precio": "$700.000"
     },
     {
       "id": 2,
-      "nombre": "Kiwi",
-      "descripcion": "Zespri",
-      "precio": 2.34
+      "nombre": "Play Station 4",
+      "descripcion": "/assets/img/ps4.png",
+      "precio": "$400.000"
     },
     {
       "id": 3,
-      "nombre": null,
-      "descripcion": null,
-      "precio": null
+      "nombre": "Nintendo Switch",
+      "descripcion": "/assets/img/switch.jpg",
+      "precio": "$300.000"
     },
     {
       "id": 4,
-      "nombre": null,
-      "descripcion": null,
-      "precio": null
-    },
-    {
-      "id": 5,
-      "nombre": "Melocotones",
-      "descripcion": "Natur",
-      "precio": "3.55"
+      "nombre": "Nintendo Switch Lite",
+      "descripcion": "/assets/img/switchlite.png",
+      "precio": "$180.000"
     }
   ]
 }

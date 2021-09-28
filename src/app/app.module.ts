@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './general/error/error.component';
 import { PruebasComponent } from './general/pruebas/pruebas.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { FormsModule } from '@angular/forms';
     PruebasComponent,
   ],
   //Se debe importar el forms module para poder trabajar con formularios
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
